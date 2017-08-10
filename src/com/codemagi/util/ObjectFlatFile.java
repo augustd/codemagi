@@ -271,6 +271,28 @@ public class ObjectFlatFile implements java.io.Serializable {
 
         if (output instanceof Integer) {
             return (Integer) output;
+        } else if (output instanceof String) {
+            try {
+                Integer parsed = new Integer((String)output);
+                setItem(row, column, parsed);
+                return parsed;
+            } catch (NumberFormatException nfe) {}
+        }
+
+        return null;
+    }
+
+    public Float getFloat(int row, int column) {
+        Object output = getItem(row, column);
+
+        if (output instanceof Float) {
+            return (Float) output;
+        } else if (output instanceof String) {
+            try {
+                Float parsed = new Float((String)output);
+                setItem(row, column, parsed);
+                return parsed;
+            } catch (NumberFormatException nfe) {}
         }
 
         return null;
