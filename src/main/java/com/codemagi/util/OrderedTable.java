@@ -17,7 +17,8 @@ package com.codemagi.util;
 
 import java.util.*;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * OrderedTable class implements a HashMap whose items can be iterated in the
@@ -32,7 +33,7 @@ import org.apache.log4j.Logger;
 public class OrderedTable extends java.util.HashMap implements Cloneable {
 
     //set to true to view debug output
-    Logger log = Logger.getLogger(this.getClass());
+    Logger log = LogManager.getLogger(this.getClass());
 
     //Vector holds the keys to this Hashtable in the order they were inserted
     protected List orderedKeys = new ArrayList(3);

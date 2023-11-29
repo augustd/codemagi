@@ -20,7 +20,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * DateUtils provides static utility methods for date manipulation, validation
@@ -33,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class DateUtils {
 
-    static Logger log = Logger.getLogger("com.codemagi.util.DateUtils");
+    static Logger log = LogManager.getLogger("com.codemagi.util.DateUtils");
 
     //DATE FORMATS:
     /**

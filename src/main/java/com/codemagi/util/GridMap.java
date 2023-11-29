@@ -17,7 +17,9 @@ package com.codemagi.util;
 
 import java.awt.Point;
 import java.util.*;
-import org.apache.log4j.*;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * GridMap is an expandable two-dimensional data structure of Objects, backed by
@@ -33,7 +35,7 @@ import org.apache.log4j.*;
  */
 public class GridMap implements java.io.Serializable {
 
-    Logger log = Logger.getLogger(this.getClass());
+    Logger log = LogManager.getLogger(this.getClass());
 
     //members
     private Map map;

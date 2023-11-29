@@ -3,11 +3,12 @@ package com.codemagi.util;
 import java.io.*;
 import java.util.zip.*;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Zipper {
 
-    Logger log = Logger.getLogger(this.getClass().getName());
+    Logger log = LogManager.getLogger(this.getClass().getName());
 
     final int DEFAULT_SIZE = 4096;
 

@@ -20,7 +20,8 @@ import java.text.BreakIterator;
 import java.util.StringTokenizer;
 import java.util.regex.*;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Provides static utility methods for working with Strings.
@@ -30,7 +31,7 @@ import org.apache.log4j.Logger;
  */
 public class StringUtils {
 
-    static Logger log = Logger.getLogger("com.codemagi.util.StringUtils");
+    static Logger log = LogManager.getLogger("com.codemagi.util.StringUtils");
 
     //Regex patterns for formatting links            
     protected static final Pattern HTTP_LINK_PATTERN = Pattern.compile("https?://\\S*");

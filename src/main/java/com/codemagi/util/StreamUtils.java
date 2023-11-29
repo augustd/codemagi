@@ -17,7 +17,8 @@ package com.codemagi.util;
 
 import java.io.*;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Provides static utility methods for working with Input/Output Streams.
@@ -27,7 +28,7 @@ import org.apache.log4j.Logger;
  */
 public class StreamUtils {
 
-    static Logger log = Logger.getLogger("com.codemagi.util.StringUtils");
+    static Logger log = LogManager.getLogger("com.codemagi.util.StringUtils");
 
     /**
      * Singleton - Block constructor by design

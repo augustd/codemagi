@@ -18,7 +18,9 @@ package com.codemagi.util;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * DataLoader class handles loading and parsing of data from tab or comma
@@ -29,7 +31,7 @@ import org.apache.log4j.Logger;
  */
 public class DataLoader {
 
-    static Logger log = Logger.getLogger("com.codemagi.util.DataLoader");
+    static Logger log = LogManager.getLogger("com.codemagi.util.DataLoader");
 
     /**
      * Read data from a file.

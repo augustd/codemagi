@@ -17,7 +17,9 @@ package com.codemagi.util;
 
 import java.io.RandomAccessFile;
 import java.util.*;
-import org.apache.log4j.*;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * GridList is an expandable two-dimensional data structure of Objects,
@@ -29,7 +31,7 @@ import org.apache.log4j.*;
 public class GridList implements java.io.Serializable {
 
     //set to true to view debug output
-    Logger log = Logger.getLogger(this.getClass());
+    Logger log = LogManager.getLogger(this.getClass());
 
     //members
     private ArrayList rows;

@@ -15,7 +15,8 @@
  */
 package com.codemagi.util;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * The Timer class allows a graceful exit when an application is stalled due to
@@ -36,7 +37,7 @@ import org.apache.log4j.Logger;
  */
 public class Timer extends Thread {
 
-    Logger log = Logger.getLogger(this.getClass());
+    Logger log = LogManager.getLogger(this.getClass());
 
     /**
      * Rate at which timer is checked

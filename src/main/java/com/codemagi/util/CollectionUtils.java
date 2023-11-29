@@ -16,7 +16,9 @@
 package com.codemagi.util;
 
 import java.util.*;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * This class defines static utility methods for working with Collections.
@@ -26,7 +28,7 @@ import org.apache.log4j.Logger;
  */
 public class CollectionUtils {
 
-    static Logger log = Logger.getLogger("com.codemagi.util.CollectionUtils");
+    static Logger log = LogManager.getLogger("com.codemagi.util.CollectionUtils");
 
     /**
      * Block constructor by design

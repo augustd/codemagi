@@ -17,7 +17,9 @@ package com.codemagi.util;
 
 import java.io.RandomAccessFile;
 import java.util.*;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * ObjectFlatFile is an expandable two-dimensional data structure of Objects,
@@ -33,7 +35,7 @@ import org.apache.log4j.Logger;
  */
 public class ObjectFlatFile implements java.io.Serializable {
 
-    Logger log = Logger.getLogger(this.getClass());
+    Logger log = LogManager.getLogger(this.getClass());
 
     //members
     private List rows;

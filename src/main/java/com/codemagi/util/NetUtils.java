@@ -17,7 +17,8 @@ package com.codemagi.util;
 
 import java.net.*;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Provides static utility methods for working with network connections.
@@ -27,7 +28,7 @@ import org.apache.log4j.Logger;
  */
 public class NetUtils {
 
-    static Logger log = Logger.getLogger("com.codemagi.util.NetUtils");
+    static Logger log = LogManager.getLogger("com.codemagi.util.NetUtils");
 
     /**
      * Block constructor by design

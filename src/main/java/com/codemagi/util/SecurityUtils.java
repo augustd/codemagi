@@ -15,7 +15,8 @@
  */
 package com.codemagi.util;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * This class defines static security utility routines.
@@ -25,7 +26,7 @@ import org.apache.log4j.Logger;
  */
 public abstract class SecurityUtils {
 
-    static Logger log = Logger.getLogger("com.codemagi.util.SecurityUtils");
+    static Logger log = LogManager.getLogger("com.codemagi.util.SecurityUtils");
 
     /**
      * This class is not meant to be instantiated
