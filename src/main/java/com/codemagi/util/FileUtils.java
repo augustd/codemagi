@@ -268,6 +268,28 @@ public class FileUtils {
     }
 
     /**
+     * Returns the number of lines in a file
+     * <p>
+     * This method throws any fileIO errors.
+     *
+     * @param sFileName Full file path.
+     * @return int the number of lines in the file
+     * @throws Exception Any fileIO errors
+     */
+    public static long countFileLines(String sFileName) throws IOException {
+
+        long lineCount = 0;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(sFileName))) {
+            while (reader.readLine() != null) {
+                lineCount++;
+            }
+        }
+
+        return lineCount;
+    }
+
+    /**
      * Move a file from one location/filename to another.
      *
      * @param source The file starting location/filename (case-sensitive)
